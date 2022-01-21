@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": ["customer"],
+  "properties": {
+    "customer" : {
+      "type": "object",
+      "required" : ["id", "name", "email"],
+      "properties" : {
+        "id" : { "type": "integer" },
+        "email" : { "type": "string" },
+        "name" : { "type": "string" },
+        "gender": { "type": "string" },
+        "address": { "type": "string" },
+        "vip": { "type": "boolean" },
+        "days_to_pay": { "type": "integer" },
+        "created_at" : { "type": "string", "format": "date-time" },
+        "updated_at" : { "type": "string", "format": "date-time"}
+      }
+    }
+  }
+}
